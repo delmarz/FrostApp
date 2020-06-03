@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB20B699246352E6D6DA8AE8 /* Pods_FrostApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B82D6C505641E259213A882 /* Pods_FrostApp.framework */; };
+		CD265D882481040F0007D3D7 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD265D872481040F0007D3D7 /* Stations.swift */; };
+		CD265D8A24810D490007D3D7 /* Observations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD265D8924810D490007D3D7 /* Observations.swift */; };
+		CD265D8C248114EB0007D3D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD265D8B248114EB0007D3D7 /* NetworkManager.swift */; };
+		CDAC305324839F02002454A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAC305224839F02002454A0 /* Extensions.swift */; };
+		CDE2B1822480B40B006B8840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2B1812480B40B006B8840 /* AppDelegate.swift */; };
+		CDE2B1842480B40C006B8840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2B1832480B40C006B8840 /* SceneDelegate.swift */; };
+		CDE2B1862480B40C006B8840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2B1852480B40C006B8840 /* ViewController.swift */; };
+		CDE2B1892480B40C006B8840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE2B1872480B40C006B8840 /* Main.storyboard */; };
+		CDE2B18B2480B40D006B8840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE2B18A2480B40D006B8840 /* Assets.xcassets */; };
+		CDE2B18E2480B40D006B8840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE2B18C2480B40D006B8840 /* LaunchScreen.storyboard */; };
+		CDF192BF2482665400E5D517 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF192BE2482665400E5D517 /* StationCell.swift */; };
+		CDF192C22482779E00E5D517 /* FloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF192C02482779E00E5D517 /* FloatingViewController.swift */; };
+		CDF192C32482779E00E5D517 /* FloatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF192C12482779E00E5D517 /* FloatingViewController.xib */; };
+		CDF192C52482816900E5D517 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF192C42482816900E5D517 /* WeatherViewController.swift */; };
+		CDF192C82482AD0B00E5D517 /* ObservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF192C62482AD0B00E5D517 /* ObservationCell.swift */; };
+		CDF192C92482AD0B00E5D517 /* ObservationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF192C72482AD0B00E5D517 /* ObservationCell.xib */; };
+		CDF192CC2482C4EE00E5D517 /* ObservationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF192CA2482C4EE00E5D517 /* ObservationCollectionCell.swift */; };
+		CDF192CD2482C4EE00E5D517 /* ObservationCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF192CB2482C4EE00E5D517 /* ObservationCollectionCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		593A8C18DAB1EDC9B97AFB76 /* Pods-FrostApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrostApp.release.xcconfig"; path = "Target Support Files/Pods-FrostApp/Pods-FrostApp.release.xcconfig"; sourceTree = "<group>"; };
+		8B82D6C505641E259213A882 /* Pods_FrostApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrostApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE4D9683218AE07AFF8E5DC /* Pods-FrostApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrostApp.debug.xcconfig"; path = "Target Support Files/Pods-FrostApp/Pods-FrostApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD265D872481040F0007D3D7 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
+		CD265D8924810D490007D3D7 /* Observations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observations.swift; sourceTree = "<group>"; };
+		CD265D8B248114EB0007D3D7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CDAC305224839F02002454A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CDE2B17E2480B40B006B8840 /* FrostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE2B1812480B40B006B8840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDE2B1832480B40C006B8840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CDE2B1852480B40C006B8840 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDE2B1882480B40C006B8840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDE2B18A2480B40D006B8840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDE2B18D2480B40D006B8840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDE2B18F2480B40D006B8840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF192BE2482665400E5D517 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		CDF192C02482779E00E5D517 /* FloatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingViewController.swift; sourceTree = "<group>"; };
+		CDF192C12482779E00E5D517 /* FloatingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingViewController.xib; sourceTree = "<group>"; };
+		CDF192C42482816900E5D517 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		CDF192C62482AD0B00E5D517 /* ObservationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationCell.swift; sourceTree = "<group>"; };
+		CDF192C72482AD0B00E5D517 /* ObservationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObservationCell.xib; sourceTree = "<group>"; };
+		CDF192CA2482C4EE00E5D517 /* ObservationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationCollectionCell.swift; sourceTree = "<group>"; };
+		CDF192CB2482C4EE00E5D517 /* ObservationCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObservationCollectionCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE2B17B2480B40B006B8840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20B699246352E6D6DA8AE8 /* Pods_FrostApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5011CAB9B9B1CCAF836E9536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE4D9683218AE07AFF8E5DC /* Pods-FrostApp.debug.xcconfig */,
+				593A8C18DAB1EDC9B97AFB76 /* Pods-FrostApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5EA693E6B506FA4E7F23D95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B82D6C505641E259213A882 /* Pods_FrostApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD57D088248752BB00C4569A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CD265D8B248114EB0007D3D7 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CD57D089248752F500C4569A /* Controller + Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CDF192BE2482665400E5D517 /* StationCell.swift */,
+				CDF192CA2482C4EE00E5D517 /* ObservationCollectionCell.swift */,
+				CDF192CB2482C4EE00E5D517 /* ObservationCollectionCell.xib */,
+				CDF192C62482AD0B00E5D517 /* ObservationCell.swift */,
+				CDF192C72482AD0B00E5D517 /* ObservationCell.xib */,
+				CDF192C02482779E00E5D517 /* FloatingViewController.swift */,
+				CDF192C12482779E00E5D517 /* FloatingViewController.xib */,
+			);
+			path = "Controller + Cell";
+			sourceTree = "<group>";
+		};
+		CDAC3051248382FE002454A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD265D8924810D490007D3D7 /* Observations.swift */,
+				CD265D872481040F0007D3D7 /* Stations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDE2B1752480B40B006B8840 = {
+			isa = PBXGroup;
+			children = (
+				CDE2B1802480B40B006B8840 /* FrostApp */,
+				CDE2B17F2480B40B006B8840 /* Products */,
+				5011CAB9B9B1CCAF836E9536 /* Pods */,
+				C5EA693E6B506FA4E7F23D95 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE2B17F2480B40B006B8840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE2B17E2480B40B006B8840 /* FrostApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE2B1802480B40B006B8840 /* FrostApp */ = {
+			isa = PBXGroup;
+			children = (
+				CDE2B1812480B40B006B8840 /* AppDelegate.swift */,
+				CDE2B1832480B40C006B8840 /* SceneDelegate.swift */,
+				CDE2B1852480B40C006B8840 /* ViewController.swift */,
+				CDF192C42482816900E5D517 /* WeatherViewController.swift */,
+				CDAC305224839F02002454A0 /* Extensions.swift */,
+				CDAC3051248382FE002454A0 /* Model */,
+				CD57D088248752BB00C4569A /* Network */,
+				CD57D089248752F500C4569A /* Controller + Cell */,
+				CDE2B1872480B40C006B8840 /* Main.storyboard */,
+				CDE2B18A2480B40D006B8840 /* Assets.xcassets */,
+				CDE2B18C2480B40D006B8840 /* LaunchScreen.storyboard */,
+				CDE2B18F2480B40D006B8840 /* Info.plist */,
+			);
+			path = FrostApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE2B17D2480B40B006B8840 /* FrostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE2B1922480B40D006B8840 /* Build configuration list for PBXNativeTarget "FrostApp" */;
+			buildPhases = (
+				CBB8FABC8E0D0AC9D0509585 /* [CP] Check Pods Manifest.lock */,
+				CDE2B17A2480B40B006B8840 /* Sources */,
+				CDE2B17B2480B40B006B8840 /* Frameworks */,
+				CDE2B17C2480B40B006B8840 /* Resources */,
+				0E559ABC0E778937FB96C318 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrostApp;
+			productName = FrostApp;
+			productReference = CDE2B17E2480B40B006B8840 /* FrostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE2B1762480B40B006B8840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Istrael Mayor";
+				TargetAttributes = {
+					CDE2B17D2480B40B006B8840 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = CDE2B1792480B40B006B8840 /* Build configuration list for PBXProject "FrostApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDE2B1752480B40B006B8840;
+			productRefGroup = CDE2B17F2480B40B006B8840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE2B17D2480B40B006B8840 /* FrostApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE2B17C2480B40B006B8840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF192CD2482C4EE00E5D517 /* ObservationCollectionCell.xib in Resources */,
+				CDE2B18E2480B40D006B8840 /* LaunchScreen.storyboard in Resources */,
+				CDF192C92482AD0B00E5D517 /* ObservationCell.xib in Resources */,
+				CDE2B18B2480B40D006B8840 /* Assets.xcassets in Resources */,
+				CDF192C32482779E00E5D517 /* FloatingViewController.xib in Resources */,
+				CDE2B1892480B40C006B8840 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E559ABC0E778937FB96C318 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrostApp/Pods-FrostApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrostApp/Pods-FrostApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrostApp/Pods-FrostApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB8FABC8E0D0AC9D0509585 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrostApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE2B17A2480B40B006B8840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF192C82482AD0B00E5D517 /* ObservationCell.swift in Sources */,
+				CD265D8C248114EB0007D3D7 /* NetworkManager.swift in Sources */,
+				CDF192C52482816900E5D517 /* WeatherViewController.swift in Sources */,
+				CDE2B1862480B40C006B8840 /* ViewController.swift in Sources */,
+				CDF192C22482779E00E5D517 /* FloatingViewController.swift in Sources */,
+				CDF192BF2482665400E5D517 /* StationCell.swift in Sources */,
+				CDE2B1822480B40B006B8840 /* AppDelegate.swift in Sources */,
+				CDAC305324839F02002454A0 /* Extensions.swift in Sources */,
+				CD265D8A24810D490007D3D7 /* Observations.swift in Sources */,
+				CDF192CC2482C4EE00E5D517 /* ObservationCollectionCell.swift in Sources */,
+				CDE2B1842480B40C006B8840 /* SceneDelegate.swift in Sources */,
+				CD265D882481040F0007D3D7 /* Stations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDE2B1872480B40C006B8840 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE2B1882480B40C006B8840 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDE2B18C2480B40D006B8840 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE2B18D2480B40D006B8840 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE2B1902480B40D006B8840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDE2B1912480B40D006B8840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE2B1932480B40D006B8840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE4D9683218AE07AFF8E5DC /* Pods-FrostApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrostApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamCode.FrostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDE2B1942480B40D006B8840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593A8C18DAB1EDC9B97AFB76 /* Pods-FrostApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrostApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamCode.FrostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE2B1792480B40B006B8840 /* Build configuration list for PBXProject "FrostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE2B1902480B40D006B8840 /* Debug */,
+				CDE2B1912480B40D006B8840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE2B1922480B40D006B8840 /* Build configuration list for PBXNativeTarget "FrostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE2B1932480B40D006B8840 /* Debug */,
+				CDE2B1942480B40D006B8840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE2B1762480B40B006B8840 /* Project object */;
+}

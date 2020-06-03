@@ -1,0 +1,6 @@
+framework module Pods_FrostApp {
+  umbrella header "Pods-FrostApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

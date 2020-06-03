@@ -1,0 +1,28 @@
+PODS:
+  - MBProgressHUD (1.1.0)
+  - Spring (1.0.6)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.1.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+
+PODFILE CHECKSUM: 290d3a9196e6ae4f155a8cc1b32cffe2dd921712
+
+COCOAPODS: 1.9.1
